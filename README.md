@@ -1,2 +1,2 @@
-# Calculadora
-Este repositorio va a realizar operaciones matemáticas (suma, resta, multiplicacion y división) simulando una calculadora real, utilizando codigo de VB .NET.
+# SUMA_VB
+Este repositorio simula una operación básica, la suma, como base para otros proyectos en codigo Visual Basic.
