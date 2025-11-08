@@ -4,11 +4,13 @@ Module Program
         Dim numero2 As Double
         Dim suma As Double
         Dim resta As Double
+        Dim division As Double
         Dim opcion As Integer
 
         Console.WriteLine("¿Qué operación desea realizar?")
         Console.WriteLine("1: Suma")
         Console.WriteLine("2: Resta")
+        Console.WriteLine("3: División")
         opcion = Convert.ToInt32(Console.ReadLine())
         
         Console.WriteLine("Ingrese el primer número:")
@@ -19,9 +21,16 @@ Module Program
         If opcion = 1 Then
             suma = numero1 + numero2
             Console.WriteLine("La suma es: " & suma)
-        Elseif opcion = 2 Then
+        ElseIf opcion = 2 Then
             resta = numero1 - numero2
             Console.WriteLine("La resta es: " & resta)
+        ElseIf opcion = 3 Then
+            If numero2 = 0 Then
+                Console.WriteLine("Error: División por cero no permitida.")
+            Else
+                division = numero1 / numero2
+                Console.WriteLine("La división es: " & division)
+            End If
         Else
             Console.WriteLine("Opción no válida")
         End If
